@@ -15,6 +15,10 @@
 		25DCCDAC1AB9EB3A008B3BAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DCCDAB1AB9EB3A008B3BAC /* Images.xcassets */; };
 		25DCCDAF1AB9EB3A008B3BAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25DCCDAD1AB9EB3A008B3BAC /* LaunchScreen.xib */; };
 		25DCCDBB1AB9EB3B008B3BAC /* LeftShiftsOpenweatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCCDBA1AB9EB3B008B3BAC /* LeftShiftsOpenweatherTests.m */; };
+		25DCCDC71AB9F775008B3BAC /* NetworkUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCCDC61AB9F775008B3BAC /* NetworkUtility.m */; };
+		25DCCDCE1ABA03B3008B3BAC /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCCDCD1ABA03B3008B3BAC /* CityModel.m */; };
+		25DCCDD11ABA03CA008B3BAC /* CityDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCCDD01ABA03CA008B3BAC /* CityDataModel.m */; };
+		25DCCDD51ABA260C008B3BAC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DCCDD41ABA260C008B3BAC /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,14 @@
 		25DCCDB41AB9EB3B008B3BAC /* LeftShiftsOpenweatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftShiftsOpenweatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DCCDB91AB9EB3B008B3BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DCCDBA1AB9EB3B008B3BAC /* LeftShiftsOpenweatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftShiftsOpenweatherTests.m; sourceTree = "<group>"; };
+		25DCCDC51AB9F775008B3BAC /* NetworkUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUtility.h; sourceTree = "<group>"; };
+		25DCCDC61AB9F775008B3BAC /* NetworkUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUtility.m; sourceTree = "<group>"; };
+		25DCCDCC1ABA03B3008B3BAC /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		25DCCDCD1ABA03B3008B3BAC /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		25DCCDCF1ABA03CA008B3BAC /* CityDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDataModel.h; sourceTree = "<group>"; };
+		25DCCDD01ABA03CA008B3BAC /* CityDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataModel.m; sourceTree = "<group>"; };
+		25DCCDD31ABA260C008B3BAC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		25DCCDD41ABA260C008B3BAC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,9 @@
 		25DCCD9A1AB9EB3A008B3BAC /* LeftShiftsOpenweather */ = {
 			isa = PBXGroup;
 			children = (
+				25DCCDD21ABA260C008B3BAC /* MBProgressHud */,
+				25DCCDCB1ABA03B3008B3BAC /* Models */,
+				25DCCDC41AB9F775008B3BAC /* Network */,
 				25DCCD9F1AB9EB3A008B3BAC /* AppDelegate.h */,
 				25DCCDA01AB9EB3A008B3BAC /* AppDelegate.m */,
 				25DCCDA21AB9EB3A008B3BAC /* MasterViewController.h */,
@@ -122,6 +137,35 @@
 				25DCCDB91AB9EB3B008B3BAC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25DCCDC41AB9F775008B3BAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				25DCCDC51AB9F775008B3BAC /* NetworkUtility.h */,
+				25DCCDC61AB9F775008B3BAC /* NetworkUtility.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		25DCCDCB1ABA03B3008B3BAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25DCCDCC1ABA03B3008B3BAC /* CityModel.h */,
+				25DCCDCD1ABA03B3008B3BAC /* CityModel.m */,
+				25DCCDCF1ABA03CA008B3BAC /* CityDataModel.h */,
+				25DCCDD01ABA03CA008B3BAC /* CityDataModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25DCCDD21ABA260C008B3BAC /* MBProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				25DCCDD31ABA260C008B3BAC /* MBProgressHUD.h */,
+				25DCCDD41ABA260C008B3BAC /* MBProgressHUD.m */,
+			);
+			path = MBProgressHud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +270,12 @@
 			files = (
 				25DCCDA11AB9EB3A008B3BAC /* AppDelegate.m in Sources */,
 				25DCCDA41AB9EB3A008B3BAC /* MasterViewController.m in Sources */,
+				25DCCDC71AB9F775008B3BAC /* NetworkUtility.m in Sources */,
 				25DCCD9E1AB9EB3A008B3BAC /* main.m in Sources */,
+				25DCCDCE1ABA03B3008B3BAC /* CityModel.m in Sources */,
 				25DCCDA71AB9EB3A008B3BAC /* DetailViewController.m in Sources */,
+				25DCCDD11ABA03CA008B3BAC /* CityDataModel.m in Sources */,
+				25DCCDD51ABA260C008B3BAC /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
